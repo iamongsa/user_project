@@ -1,0 +1,101 @@
+.bar-home {
+  padding: 2.5%;
+  background-image: url("../img/carmechanic.jpg");
+  background-size: 100%;
+  color: white;
+  position: sticky;
+  top: 0;
+  text-decoration: none;
+  list-style: none;
+  font-weight: bold;
+}
+.textcontact {
+  display: flex;
+  justify-content: end;
+}
+
+.tittle .logo {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+}
+
+.logo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav li .menu {
+  font-size: 20px;
+  color: white;
+  list-style: none;
+  text-decoration: none;
+}
+
+nav li .menu:link,
+a:visited {
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+nav li .menu:link:hover,
+a:active {
+  background-color: #e5d283;
+  border-radius: 0.5rem;
+}
+
+nav ul {
+  display: flex;
+}
+.header-home {
+  font-size: 27px;
+  font-weight: bolder;
+  color: white;
+  justify-content: center;
+  display: flex;
+  text-shadow: 2px 2px 8px black;
+}
+
+@media (max-width: 740px) {
+  nav .title {
+    font-size: 20px;
+  }
+  .header-home {
+    font-size: 30px;
+  }
+  nav li .menu {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  nav .title {
+    font-size: 20px;
+  }
+  .header-home {
+    font-size: 15px;
+  }
+  nav li .menu {
+    font-size: 13px;
+  }
+}
+
+
+
+/* @media (max-width: 1024px) {
+    .bar-home {
+        padding: 1.8%;
+    }
+    nav .title {
+        font-size: 20px;
+}
+.header-home {
+    font-size: 15px;
+  }
+  nav li .menu {
+    font-size: 13px;
+}
+}
+   */

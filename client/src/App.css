@@ -1,0 +1,202 @@
+html,body{
+  background-color: #F0F0F0;
+}
+.App {
+  background-color: #F0F0F0;
+  height: auto;
+  width: auto;
+}
+
+/* homeuser */
+.mysearch {
+  padding: 1%;
+  margin-top: 3%;
+  width: 40%;
+  height: 60px;
+  border-radius: 2rem;
+  border: 3px solid #4f709c;
+  font-size: 20px;
+}
+.mysearch:hover {
+  border: 3px solid #e5d283;
+}
+.telsearch {
+  padding: 1%;
+  margin: 1%;
+  width: 40%;
+  height: 60px;
+  border-radius: 2rem;
+  border: 3px solid #4f709c;
+  font-size: 20px;
+}
+.telsearch:hover {
+  border: 3px solid #e5d283;
+}
+.search {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.btcontent {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.bt {
+  margin: 1%;
+  width: 8%;
+  height: 50px;
+  border-radius: 1rem;
+  font-size: 20px;
+  background-color: #4f709c;
+  color: white;
+  font-weight: bolder;
+}
+.bt:hover {
+  background-color: #e5d283;
+}
+
+/* ตารางแสดงข้อมูล */
+
+.bg-data {
+  background-color: #edeedf;
+  padding: 3%;
+  margin: 3%;
+  box-shadow: 0 12px 15px rgba(0, 0, 0, 0.12);
+}
+
+.head-tb {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  color: #4f709c;
+  font-weight: bolder;
+}
+
+.conbtw {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #4f709c;
+}
+.data-cust {
+  margin: 1%;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.con-car {
+  display: flex;
+  justify-content: space-between;
+}
+
+.center-status {
+  display: flex;
+  justify-content: center;
+  margin: 1%;
+  padding: 2%;
+
+}
+
+.icon-status {
+  width: 20%;
+}
+
+.con-center {
+  display: flex;
+  justify-content: center;
+  border-radius: 1rem;
+  border: 1px solid #4f709c;
+  margin: 1%;
+  padding: 2%;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+/* respon iphone 740 */
+@media (max-width: 740px) {
+  .search {
+    padding: 1%;
+  }
+  .mysearch {
+    border: 2px solid #4f709c;
+    padding: 2%;
+    width: 50%;
+    height: 60px;
+    font-size: 20px;
+  }
+  .telsearch {
+    border: 2px solid #4f709c;
+    padding: 2%;
+    width: 50%;
+    height: 60px;
+    font-size: 20px;
+  }
+  .bt {
+    margin: 3%;
+    width: 15%;
+    height: 50px;
+    border-radius: 0.3rem;
+    font-size: 20px;
+    background-color: #4f709c;
+    color: white;
+    font-weight: bolder;}
+
+    /* ตารางแสดงข้อมูล */
+
+  .head-tb{
+      font-size: 30px;
+    }
+    .data-cust{
+      font-size: 17px;
+    }
+    .con-center{
+      font-size: 17px;
+    }
+  }
+
+/* respon iphone SE */
+@media (max-width: 375px) {
+  .search {
+    padding: 1%;
+  }
+  .mysearch {
+    border: 2px solid #4f709c;
+    padding: 2%;
+    width: 50%;
+    height: 40px;
+    font-size: 10px;
+  }
+  .telsearch {
+    border: 2px solid #4f709c;
+    padding: 2%;
+    width: 50%;
+    height: 40px;
+    font-size: 10px;
+  }
+  .bt {
+    margin: 3%;
+    width: 15%;
+    height: 25px;
+    border-radius: 0.3rem;
+    font-size: 10px;
+    background-color: #4f709c;
+    color: white;
+    font-weight: bolder;}
+    /* ตารางแสดงข้อมูล */
+
+    .head-tb{
+      font-size: 15px;
+    }
+    .data-cust{
+      font-size: 10px;
+    }
+    .con-center{
+      font-size: 10px;
+    }
+}
+
+
+
+
+ 

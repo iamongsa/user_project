@@ -1,0 +1,127 @@
+ 
+/* contact */
+.page-con{
+    margin-left: 50px;
+   }
+   
+   .text-head {
+     color: #E5D283;
+     margin: 2%;
+     font-weight: bolder;
+   }
+   .text-ad p {
+     grid-column: 1;
+     margin: 2%;
+     display: flex;
+     font-size: 15px;
+   }
+   .map {
+     margin: 2%;
+     width: 500px;
+     height: 300px;
+   }
+   .img-con {
+     position: absolute;
+     bottom: 0;
+     right: 0;
+     width: auto;
+   }
+   
+  
+    @media (max-width: 740px) {
+      .page-con{
+        margin:2%;
+        padding: 3%;
+       }
+      .text-head {
+        margin: 30px;
+        justify-content: center;
+        display: flex;
+        font-size:40px;
+      }
+      .text-ad p {
+        font-size: 20px;
+        justify-content: center;
+        display: flex;
+      }
+      .map {
+        width: 70%;
+        height: 300px;
+        justify-content: center;
+        display: flex;
+        margin-top: 60px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .img-con {
+        width: 70%;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+      }
+    }
+
+    @media (max-width: 430px) {
+      .page-con{
+        margin:2%;
+        padding: 3%;
+       }
+      .text-head {
+        margin: 30px;
+        justify-content: center;
+        display: flex;
+        font-size:30px;
+      }
+      .text-ad p {
+        font-size: 12px;
+        justify-content: center;
+        display: flex;
+      }
+      .map {
+        width: 70%;
+        height: 300px;
+        justify-content: center;
+        display: flex;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .img-con {
+        width: 70%;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+      }
+    }
+    @media (max-width: 375px) {
+      .page-con{
+        margin:1%;
+        padding: 2%;
+       }
+      .text-head {
+        margin: 30px;
+        justify-content: center;
+        display: flex;
+        font-size:30px;
+      }
+      .text-ad p {
+        font-size: 10px;
+        justify-content: center;
+        display: flex;
+      }
+      .map {
+        width: 70%;
+        height: 200px;
+        justify-content: center;
+        display: flex;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .img-con {
+        width: 70%;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+      }
+    }

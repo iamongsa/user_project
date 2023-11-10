@@ -4,9 +4,15 @@ import axios from "axios";
 import Clockstatus from "../img/clock-status.gif";
 import Repairstatus from "../img/repair-status.gif";
 import Submitstatus from "../img/submit-status.gif";
-import dayjs from 'dayjs';
+import dayjs from "dayjs";
 import buddhistEra from "dayjs/plugin/buddhistEra";
-import th from 'dayjs/locale/th';
+import th from "dayjs/locale/th";
+import Table from "@mui/material/Table";
+import TableBody from "@mui/material/TableBody";
+import TableCell from "@mui/material/TableCell";
+import TableContainer from "@mui/material/TableContainer";
+import TableHead from "@mui/material/TableHead";
+import TableRow from "@mui/material/TableRow";
 dayjs.extend(buddhistEra);
 
 const DateLongTH = (date) => {
@@ -39,7 +45,9 @@ function homeuser() {
     }
   };
 
-  console.log(orderData[0]?.status_name);
+  console.log(
+    orderData[0]?.status_name + "" + orderData[0]?.repair_description
+  );
   return (
     <div>
       <Navbar />
@@ -87,7 +95,9 @@ function homeuser() {
                   </div>
                   <div className="data-cust">
                     <b>วันที่คาดว่าจะเสร็จ: </b>
-                    <font color="#213555">{DateLongTH(order.estimate_time)}</font>
+                    <font color="#213555">
+                      {DateLongTH(order.estimate_time)}
+                    </font>
                   </div>
                 </div>
 
@@ -100,17 +110,48 @@ function homeuser() {
                     <b>ช่าง: </b>
                     <font color="#213555">{order.mech_name}</font>
                   </div>
-                  </div>
-                  <div className="center-status">
-                    {orderData[0].status_name==="รับรถเข้าอู่"&&<img className="icon-status" src={Clockstatus}alt=""></img>}
-                    {orderData[0].status_name==="กำลังดำเนินการซ่อม"&&<img className="icon-status" src={Repairstatus}alt=""></img>}
-                    {orderData[0].status_name==="ดำเนินการซ่อมเสร็จสิ้น"&&<img className="icon-status" src={Submitstatus}alt=""></img>}
-                  </div>
+                </div>
+                <div className="center-status">
+                  {orderData[0].status_name === "รับรถเข้าอู่" && (
+                    <img className="icon-status" src={Clockstatus} alt=""></img>
+                  )}
+                  {orderData[0].status_name === "กำลังดำเนินการซ่อม" && (
+                    <img
+                      className="icon-status"
+                      src={Repairstatus}
+                      alt=""
+                    ></img>
+                  )}
+                  {orderData[0].status_name === "ดำเนินการซ่อมเสร็จสิ้น" && (
+                    <img
+                      className="icon-status"
+                      src={Submitstatus}
+                      alt=""
+                    ></img>
+                  )}  
+                 
+                </div>  
+                <h2 className="head-tb">อัพเดตการซ่อม</h2>
                   <div className="con-center">
-                  <ul type="disc">รายละเอียด 
-                  <li>{order.description}</li>
-                  </ul>
-                  </div>
+                  <Table>
+                    <TableHead>
+                      <TableRow>
+                        <TableCell>รายละเอียด</TableCell>
+                        <TableCell>สถานะ</TableCell>
+                        <TableCell>วันที่</TableCell>
+                        <TableCell>ค่าใช้จ่ายโดยประมาณ</TableCell>
+                      </TableRow>
+                    </TableHead>
+                    <TableBody>
+                        <TableRow>
+                          <TableCell>{order.repair_description}</TableCell>
+                          <TableCell>{order.status_update}</TableCell>
+                          <TableCell>{DateLongTH(order.update_date)}</TableCell>
+                          <TableCell>{order.estimate_price}</TableCell>
+                        </TableRow>
+                    </TableBody>
+                  </Table>
+                </div>
               </p>
             ))}
           </div>

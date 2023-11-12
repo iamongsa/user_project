@@ -69,7 +69,7 @@ html,body{
 .head-tb {
   display: flex;
   justify-content: center;
-  padding: 2%;
+  padding: 3%;
   color: #4f709c;
   font-weight: bolder;
 }
@@ -155,8 +155,48 @@ html,body{
     }
   }
 
-/* respon iphone SE */
-@media (max-width: 375px) {
+@media (max-width: 740px) {
+  .search {
+    padding: 1%;
+  }
+  .mysearch {
+    border: 2px solid #4f709c;
+    padding: 2%;
+    width: 50%;
+    height: 40px;
+    font-size: 10px;
+  }
+  .telsearch {
+    border: 2px solid #4f709c;
+    padding: 2%;
+    width: 50%;
+    height: 40px;
+    font-size: 10px;
+  }
+  .bt {
+    margin: 3%;
+    width: 15%;
+    height: 25px;
+    border-radius: 0.3rem;
+    font-size: 10px;
+    background-color: #4f709c;
+    color: white;
+    font-weight: bolder;}
+    /* ตารางแสดงข้อมูล */
+
+    .head-tb{
+      font-size: 20px;
+    }
+    .data-cust{
+      font-size: 13px;
+    }
+    .con-center{
+      font-size: 13px;
+    }
+}
+
+
+@media (max-width: 400px) {
   .search {
     padding: 1%;
   }
@@ -189,10 +229,10 @@ html,body{
       font-size: 15px;
     }
     .data-cust{
-      font-size: 10px;
+      font-size: 11px;
     }
     .con-center{
-      font-size: 10px;
+      font-size: 11px;
     }
 }
 

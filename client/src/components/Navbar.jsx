@@ -18,7 +18,7 @@ function Navbar() {
           <Link to ="/">
             <img src={Logo} alt="Logo" className="logo"></img>
             </Link>
-          <div class="header-home">ติดตามสถานะการซ่อมรถ</div>
+          <div className="header-home">ติดตามสถานะการซ่อมรถ</div>
 
         </div>
       </nav>

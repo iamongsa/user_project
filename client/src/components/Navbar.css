@@ -63,39 +63,26 @@ nav ul {
     font-size: 20px;
   }
   .header-home {
-    font-size: 30px;
+    font-size: 25px;
   }
   nav li .menu {
     font-size: 20px;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   nav .title {
-    font-size: 20px;
+    font-size: 10px;
   }
   .header-home {
-    font-size: 15px;
+    font-size: 20px;
   }
   nav li .menu {
-    font-size: 13px;
-  }
-}
-
-
-
-/* @media (max-width: 1024px) {
-    .bar-home {
-        padding: 1.8%;
-    }
-    nav .title {
-        font-size: 20px;
-}
-.header-home {
     font-size: 15px;
   }
-  nav li .menu {
-    font-size: 13px;
 }
-}
-   */
+
+
+
+
+
